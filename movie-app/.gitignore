@@ -7,10 +7,38 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
+# Dependencies
 node_modules
+/.pnp
+.pnp.js
+
+# Testing
+/coverage
+
+# Next.js
+/.next/
+/out/
+.next
+
+# Production
+/build
 dist
 dist-ssr
-*.local
+
+# Environment variables
+.env*.local
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Vercel
+.vercel
+
+# TypeScript
+*.tsbuildinfo
+next-env.d.ts
 
 # Editor directories and files
 .vscode/*
@@ -22,3 +50,8 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+*.pem
+
+# OS
+.DS_Store
+Thumbs.db
